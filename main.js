@@ -1,11 +1,11 @@
-/* Vigil landing — config + interactions.
+/* Vigilante landing — config + interactions.
    Two things to fill in after setup (see SETUP.md):
    1) BOOKING_URL  — your Google Calendar appointment-schedule link.
    2) FORM_ENDPOINT — your Formspree endpoint for the async lead form.
    Until BOOKING_URL is real, "Book a demo" scrolls to the form so nothing is dead. */
 
 const SITE = {
-  name: "Vigil",
+  name: "Vigilante",
   // TODO: paste your Google Calendar booking link here.
   BOOKING_URL: "",
   // TODO: paste your Formspree endpoint here, e.g. "https://formspree.io/f/xxxxxxxx".
@@ -75,7 +75,7 @@ function wireForm() {
     }
 
     // Fallback before Formspree is set up: open a prefilled email.
-    const subject = encodeURIComponent("Vigil — demo request");
+    const subject = encodeURIComponent("Vigilante — demo request");
     const body = encodeURIComponent(
       `Email: ${data.email}\nCompany: ${data.company || ""}\nTeam size: ${data.team_size || ""}\n` +
       `Biggest on-call pain: ${data.pain || ""}\nStack today: ${data.stack || ""}`

@@ -4,23 +4,23 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Vigil — AI On-Call Engineer</title>
-<meta name="description" content="Vigil is an AI on-call engineer. It answers every page, finds the root cause, and leaves your team a fix by morning — so no one wakes up at 3am for a false alarm.">
-<link rel="canonical" href="https://goldnbones.github.io/vigil/">
+<title>Vigilante — AI On-Call Engineer</title>
+<meta name="description" content="Vigilante is an AI on-call engineer. It answers every page, finds the root cause, and leaves your team a fix by morning — so no one wakes up at 3am for a false alarm.">
+<link rel="canonical" href="https://goldnbones.github.io/vigilante/">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <meta name="theme-color" content="#12142a">
 
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="Vigil">
-<meta property="og:title" content="Vigil — the on-call engineer that never sleeps">
-<meta property="og:description" content="Vigil answers every page, finds the root cause, and leaves your team a fix by morning. Built for teams without an SRE org. Read-only by default.">
-<meta property="og:url" content="https://goldnbones.github.io/vigil/">
-<meta property="og:image" content="https://goldnbones.github.io/vigil/assets/og.svg">
-<meta property="og:image:alt" content="Vigil's morning brief: an overnight incident found, explained, and fixed by dawn.">
+<meta property="og:site_name" content="Vigilante">
+<meta property="og:title" content="Vigilante — the on-call engineer that never sleeps">
+<meta property="og:description" content="Vigilante answers every page, finds the root cause, and leaves your team a fix by morning. Built for teams without an SRE org. Read-only by default.">
+<meta property="og:url" content="https://goldnbones.github.io/vigilante/">
+<meta property="og:image" content="https://goldnbones.github.io/vigilante/assets/og.svg">
+<meta property="og:image:alt" content="Vigilante's morning brief: an overnight incident found, explained, and fixed by dawn.">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Vigil — AI On-Call Engineer">
+<meta name="twitter:title" content="Vigilante — AI On-Call Engineer">
 <meta name="twitter:description" content="Answers every page, finds the cause, leaves a fix by morning. Built for teams without an SRE org.">
-<meta name="twitter:image" content="https://goldnbones.github.io/vigil/assets/og.svg">
+<meta name="twitter:image" content="https://goldnbones.github.io/vigilante/assets/og.svg">
 
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,18 +29,18 @@
 <link rel="stylesheet" href="styles.css">
 
 <script type="application/ld+json">
-{ "@context":"https://schema.org","@type":"Organization","name":"Vigil","url":"https://goldnbones.github.io/vigil/","description":"Vigil is an AI on-call engineer for software teams. It answers production pages, investigates root cause, and proposes fixes.","logo":"https://goldnbones.github.io/vigil/assets/favicon.svg","slogan":"The on-call engineer that never sleeps." }
+{ "@context":"https://schema.org","@type":"Organization","name":"Vigilante","url":"https://goldnbones.github.io/vigilante/","description":"Vigilante is an AI on-call engineer for software teams. It answers production pages, investigates root cause, and proposes fixes.","logo":"https://goldnbones.github.io/vigilante/assets/favicon.svg","slogan":"The on-call engineer that never sleeps." }
 </script>
 <script type="application/ld+json">
-{ "@context":"https://schema.org","@type":"SoftwareApplication","name":"Vigil","applicationCategory":"DeveloperApplication","operatingSystem":"Web / Cloud","description":"An AI on-call engineer that answers every alert, investigates across logs, metrics, traces, and recent deploys, and hands your team a root cause with a proposed fix. Read-only by default, with a graduated autonomy ladder toward guarded remediation.","featureList":["First-response triage on every alert","Root-cause analysis across logs, metrics, traces, and deploys","Overnight incident to morning summary","Recurring-incident remediation with guardrails","Integrates with Datadog, Grafana, PagerDuty, Opsgenie, and Kubernetes"],"offers":{"@type":"Offer","price":"0","priceCurrency":"USD","description":"Founding design partner program — early access."} }
+{ "@context":"https://schema.org","@type":"SoftwareApplication","name":"Vigilante","applicationCategory":"DeveloperApplication","operatingSystem":"Web / Cloud","description":"An AI on-call engineer that answers every alert, investigates across logs, metrics, traces, and recent deploys, and hands your team a root cause with a proposed fix. Read-only by default, with a graduated autonomy ladder toward guarded remediation.","featureList":["First-response triage on every alert","Root-cause analysis across logs, metrics, traces, and deploys","Overnight incident to morning summary","Recurring-incident remediation with guardrails","Integrates with Datadog, Grafana, PagerDuty, Opsgenie, and Kubernetes"],"offers":{"@type":"Offer","price":"0","priceCurrency":"USD","description":"Founding design partner program — early access."} }
 </script>
 <script type="application/ld+json">
 { "@context":"https://schema.org","@type":"FAQPage","mainEntity":[
-  {"@type":"Question","name":"What is Vigil?","acceptedAnswer":{"@type":"Answer","text":"Vigil is an AI on-call engineer. It answers every alert, investigates across your logs, metrics, traces, and recent deploys, and hands your team a root cause and a proposed fix. It is built for software teams with real on-call pain but no dedicated SRE team."}},
-  {"@type":"Question","name":"How is Vigil different from PagerDuty or Datadog?","acceptedAnswer":{"@type":"Answer","text":"PagerDuty routes the page to a human and Datadog shows the dashboards. Vigil is the engineer who picks up the page: it reads those same signals, forms and tests hypotheses, and returns a cause and a fix. Vigil connects to your existing PagerDuty, Opsgenie, Datadog, and Grafana rather than replacing them."}},
-  {"@type":"Question","name":"Does Vigil take actions on my production systems?","acceptedAnswer":{"@type":"Answer","text":"Not until you let it. Vigil is read-only by default: it investigates and proposes. As you build trust, you can move it up a graduated autonomy ladder toward guarded remediation, with approvals and audit logging at every step."}},
-  {"@type":"Question","name":"Is my data used to train models?","acceptedAnswer":{"@type":"Answer","text":"No. Your production data is never used to train models. Vigil uses least-privilege, read-only access by default with full audit logging."}},
-  {"@type":"Question","name":"Who is Vigil for?","acceptedAnswer":{"@type":"Answer","text":"Fast-moving software teams, roughly Series A to C with 15 to 150 engineers, running Kubernetes or cloud on Datadog or Grafana with PagerDuty or Opsgenie, who have a rotating on-call but no dedicated SRE org."}}
+  {"@type":"Question","name":"What is Vigilante?","acceptedAnswer":{"@type":"Answer","text":"Vigilante is an AI on-call engineer. It answers every alert, investigates across your logs, metrics, traces, and recent deploys, and hands your team a root cause and a proposed fix. It is built for software teams with real on-call pain but no dedicated SRE team."}},
+  {"@type":"Question","name":"How is Vigilante different from PagerDuty or Datadog?","acceptedAnswer":{"@type":"Answer","text":"PagerDuty routes the page to a human and Datadog shows the dashboards. Vigilante is the engineer who picks up the page: it reads those same signals, forms and tests hypotheses, and returns a cause and a fix. Vigilante connects to your existing PagerDuty, Opsgenie, Datadog, and Grafana rather than replacing them."}},
+  {"@type":"Question","name":"Does Vigilante take actions on my production systems?","acceptedAnswer":{"@type":"Answer","text":"Not until you let it. Vigilante is read-only by default: it investigates and proposes. As you build trust, you can move it up a graduated autonomy ladder toward guarded remediation, with approvals and audit logging at every step."}},
+  {"@type":"Question","name":"Is my data used to train models?","acceptedAnswer":{"@type":"Answer","text":"No. Your production data is never used to train models. Vigilante uses least-privilege, read-only access by default with full audit logging."}},
+  {"@type":"Question","name":"Who is Vigilante for?","acceptedAnswer":{"@type":"Answer","text":"Fast-moving software teams, roughly Series A to C with 15 to 150 engineers, running Kubernetes or cloud on Datadog or Grafana with PagerDuty or Opsgenie, who have a rotating on-call but no dedicated SRE org."}}
 ]}
 </script>
 </head>
@@ -49,7 +49,7 @@
 
 <header class="nav">
   <div class="wrap nav-inner">
-    <a class="brand" href="#top"><span class="brand-mark" aria-hidden="true"></span>Vigil</a>
+    <a class="brand" href="#top"><span class="brand-mark" aria-hidden="true"></span>Vigilante</a>
     <a class="btn btn-primary js-book" href="#demo">Book a demo</a>
   </div>
 </header>
@@ -59,7 +59,7 @@
   <section class="hero wrap" id="top">
     <div class="hero-copy">
       <h1>The on&#8209;call engineer<br>that never sleeps.</h1>
-      <p class="lede">So yours can. Vigil answers every page, finds the root cause, and leaves your team a fix by morning.</p>
+      <p class="lede">So yours can. Vigilante answers every page, finds the root cause, and leaves your team a fix by morning.</p>
       <div class="cta-row">
         <a class="btn btn-primary btn-lg js-book" href="#demo">Book a demo</a>
         <a class="btn btn-quiet btn-lg" href="#how">How it works</a>
@@ -73,7 +73,7 @@
         <span class="brief-title">Morning brief</span>
         <span class="brief-time">7:00 AM</span>
       </div>
-      <p class="brief-lead">While you slept, Vigil handled <b>one incident</b>.</p>
+      <p class="brief-lead">While you slept, Vigilante handled <b>one incident</b>.</p>
       <div class="brief-item">
         <span class="bi-time">03:14</span>
         <span class="bi-body"><b>checkout-api</b> — elevated 5xx<br><span class="bi-sub">Cause: deploy <span class="hash">a3f9c1</span> shrank the DB pool. Reverted.</span></span>
@@ -96,8 +96,8 @@
       </li>
       <li>
         <span class="sn">Two</span>
-        <h3>Vigil takes the page</h3>
-        <p>Every alert hits Vigil first. It clears the noise and investigates the real ones in parallel.</p>
+        <h3>Vigilante takes the page</h3>
+        <p>Every alert hits Vigilante first. It clears the noise and investigates the real ones in parallel.</p>
       </li>
       <li>
         <span class="sn">Three</span>
@@ -110,7 +110,7 @@
   <section class="ladder-band">
     <div class="wrap ladder-inner">
       <p class="ladder-lead">Trust is a ladder, not a leap.</p>
-      <p class="ladder-sub">Vigil starts read-only and earns its way toward fixing things — one auditable rung at a time.</p>
+      <p class="ladder-sub">Vigilante starts read-only and earns its way toward fixing things — one auditable rung at a time.</p>
       <div class="rungs">
         <span class="rung on">Triage</span>
         <span class="rung on">Investigate</span>
@@ -123,8 +123,8 @@
 
   <section class="demo wrap" id="demo">
     <div class="demo-copy">
-      <h2>See Vigil on your own incidents.</h2>
-      <p class="lede">We're onboarding a handful of founding design partners. Book 30 minutes and we'll show you how Vigil would take first watch on your stack.</p>
+      <h2>See Vigilante on your own incidents.</h2>
+      <p class="lede">We're onboarding a handful of founding design partners. Book 30 minutes and we'll show you how Vigilante would take first watch on your stack.</p>
       <a class="btn btn-primary btn-lg js-book" href="#demo">Book a demo</a>
     </div>
     <form class="lead-form" id="leadForm" novalidate>
@@ -149,11 +149,11 @@
   <section class="faq wrap" id="faq">
     <h2>Questions engineers ask</h2>
     <div class="faq-list">
-      <details><summary>How is this different from PagerDuty or Datadog?</summary><p>They route the page and show the dashboards. Vigil is the engineer who picks it up — reading those same signals, testing hypotheses, and returning a cause and a fix. It connects to your existing tools instead of replacing them.</p></details>
-      <details><summary>Does it touch production?</summary><p>Not until you let it. Vigil is read-only by default. You move it up the autonomy ladder as it earns trust, with approvals and an audit log at every step.</p></details>
+      <details><summary>How is this different from PagerDuty or Datadog?</summary><p>They route the page and show the dashboards. Vigilante is the engineer who picks it up — reading those same signals, testing hypotheses, and returning a cause and a fix. It connects to your existing tools instead of replacing them.</p></details>
+      <details><summary>Does it touch production?</summary><p>Not until you let it. Vigilante is read-only by default. You move it up the autonomy ladder as it earns trust, with approvals and an audit log at every step.</p></details>
       <details><summary>Is my data used to train models?</summary><p>No. Your production data is never used for training. Least-privilege, read-only access by default.</p></details>
-      <details><summary>How is it different from Resolve, Traversal, or Cleric?</summary><p>Strong tools, mostly aimed at enterprise rollouts. Vigil is built for the team without an SRE org: fast to connect, priced for Series A–C, and honest about starting read-only.</p></details>
-      <details><summary>How long to set up?</summary><p>Same-day is the goal. Connect your tools with read-only access and Vigil starts triaging that night.</p></details>
+      <details><summary>How is it different from Resolve, Traversal, or Cleric?</summary><p>Strong tools, mostly aimed at enterprise rollouts. Vigilante is built for the team without an SRE org: fast to connect, priced for Series A–C, and honest about starting read-only.</p></details>
+      <details><summary>How long to set up?</summary><p>Same-day is the goal. Connect your tools with read-only access and Vigilante starts triaging that night.</p></details>
     </div>
   </section>
 
@@ -161,7 +161,7 @@
 
 <footer class="footer">
   <div class="wrap footer-inner">
-    <span class="brand"><span class="brand-mark" aria-hidden="true"></span>Vigil</span>
+    <span class="brand"><span class="brand-mark" aria-hidden="true"></span>Vigilante</span>
     <span class="foot-note">An AI on-call engineer · founding design partners</span>
     <a class="js-book" href="#demo">Book a demo</a>
   </div>

@@ -1,4 +1,4 @@
-# Vigil — allow all crawlers, including AI answer-engine crawlers (AEO).
+# Vigilante — allow all crawlers, including AI answer-engine crawlers (AEO).
 User-agent: *
 Allow: /
 
@@ -22,4 +22,4 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
-Sitemap: https://goldnbones.github.io/vigil/sitemap.xml
+Sitemap: https://goldnbones.github.io/vigilante/sitemap.xml
