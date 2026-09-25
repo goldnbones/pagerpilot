@@ -1,27 +1,27 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" font-family="'IBM Plex Sans',system-ui,sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
   <defs>
-    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#38d39f"/><stop offset="1" stop-color="#4fd1d9"/>
-    </linearGradient>
-    <radialGradient id="glow" cx="80%" cy="0%" r="70%">
-      <stop offset="0" stop-color="#38d39f" stop-opacity=".18"/><stop offset="1" stop-color="#38d39f" stop-opacity="0"/>
+    <radialGradient id="dawn" cx="82%" cy="6%" r="70%">
+      <stop offset="0" stop-color="#ff9e64" stop-opacity=".28"/>
+      <stop offset="45%" stop-color="#f58a9b" stop-opacity=".08"/>
+      <stop offset="100%" stop-color="#12142a" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="sun" cx="50%" cy="55%" r="60%">
+      <stop offset="0" stop-color="#ffc98a"/><stop offset="100%" stop-color="#ff9e64"/>
     </radialGradient>
   </defs>
-  <rect width="1200" height="630" fill="#0b0f14"/>
-  <rect width="1200" height="630" fill="url(#glow)"/>
-  <g transform="translate(80,86)">
-    <circle cx="12" cy="12" r="12" fill="#38d39f"/>
-    <circle cx="12" cy="12" r="20" fill="none" stroke="#38d39f" stroke-opacity=".3" stroke-width="4"/>
-    <text x="44" y="21" fill="#e8eef4" font-size="30" font-weight="700" letter-spacing="-.5">Vigil</text>
+  <rect width="1200" height="630" fill="#12142a"/>
+  <rect width="1200" height="630" fill="url(#dawn)"/>
+  <g transform="translate(84,84)">
+    <circle cx="8" cy="9" r="8" fill="#ff9e64"/>
+    <text x="26" y="18" fill="#edecf6" font-family="Georgia,'Times New Roman',serif" font-size="30">Vigil</text>
   </g>
-  <text x="80" y="260" fill="#e8eef4" font-size="72" font-weight="700" letter-spacing="-2" font-family="'Familjen Grotesk',system-ui,sans-serif">Your pager goes off at 3am.</text>
-  <text x="80" y="345" font-size="72" font-weight="700" letter-spacing="-2" fill="url(#g)" font-family="'Familjen Grotesk',system-ui,sans-serif">Vigil picks it up.</text>
-  <text x="80" y="425" fill="#b7c3cf" font-size="30">The AI on-call engineer. Takes first response, finds root cause,</text>
-  <text x="80" y="466" fill="#b7c3cf" font-size="30">hands your team a fix — built for teams without an SRE army.</text>
-  <g transform="translate(80,520)" font-family="'IBM Plex Mono',monospace" font-size="21">
-    <rect x="0" y="0" width="235" height="40" rx="10" fill="#111a23" stroke="#38d39f" stroke-opacity=".4"/>
-    <text x="20" y="26" fill="#38d39f">✓ No human woken</text>
-    <rect x="255" y="0" width="205" height="40" rx="10" fill="#111a23" stroke="#9bafc3" stroke-opacity=".18"/>
-    <text x="275" y="26" fill="#8391a0">MTTR 6m 20s</text>
+  <text x="84" y="270" fill="#edecf6" font-family="Georgia,'Times New Roman',serif" font-size="82">The on-call engineer</text>
+  <text x="84" y="356" fill="#edecf6" font-family="Georgia,'Times New Roman',serif" font-size="82">that never sleeps.</text>
+  <text x="84" y="430" fill="#b7b7d2" font-family="Helvetica,Arial,sans-serif" font-size="27">Answers every page. Finds the cause. Leaves your team a fix by morning.</text>
+  <g transform="translate(84,486)">
+    <rect x="0" y="0" width="640" height="66" rx="12" fill="#171a33" stroke="rgba(184,188,230,.14)"/>
+    <circle cx="34" cy="33" r="13" fill="url(#sun)"/>
+    <text x="60" y="30" fill="#edecf6" font-family="Georgia,serif" font-size="19">Morning brief</text>
+    <text x="60" y="52" fill="#b7b7d2" font-family="Helvetica,Arial,sans-serif" font-size="15">1 incident resolved overnight · 0 pages reached a human</text>
   </g>
 </svg>
