@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" font-family="'IBM Plex Sans',system-ui,sans-serif">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#38d39f"/><stop offset="1" stop-color="#4fd1d9"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="80%" cy="0%" r="70%">
+      <stop offset="0" stop-color="#38d39f" stop-opacity=".18"/><stop offset="1" stop-color="#38d39f" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#0b0f14"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <g transform="translate(80,86)">
+    <circle cx="12" cy="12" r="12" fill="#38d39f"/>
+    <circle cx="12" cy="12" r="20" fill="none" stroke="#38d39f" stroke-opacity=".3" stroke-width="4"/>
+    <text x="44" y="21" fill="#e8eef4" font-size="30" font-weight="700" letter-spacing="-.5">Vigil</text>
+  </g>
+  <text x="80" y="260" fill="#e8eef4" font-size="72" font-weight="700" letter-spacing="-2" font-family="'Familjen Grotesk',system-ui,sans-serif">Your pager goes off at 3am.</text>
+  <text x="80" y="345" font-size="72" font-weight="700" letter-spacing="-2" fill="url(#g)" font-family="'Familjen Grotesk',system-ui,sans-serif">Vigil picks it up.</text>
+  <text x="80" y="425" fill="#b7c3cf" font-size="30">The AI on-call engineer. Takes first response, finds root cause,</text>
+  <text x="80" y="466" fill="#b7c3cf" font-size="30">hands your team a fix — built for teams without an SRE army.</text>
+  <g transform="translate(80,520)" font-family="'IBM Plex Mono',monospace" font-size="21">
+    <rect x="0" y="0" width="235" height="40" rx="10" fill="#111a23" stroke="#38d39f" stroke-opacity=".4"/>
+    <text x="20" y="26" fill="#38d39f">✓ No human woken</text>
+    <rect x="255" y="0" width="205" height="40" rx="10" fill="#111a23" stroke="#9bafc3" stroke-opacity=".18"/>
+    <text x="275" y="26" fill="#8391a0">MTTR 6m 20s</text>
+  </g>
+</svg>

@@ -1,0 +1,27 @@
+# Vigil
+
+> Vigil is an AI on-call engineer. It takes first response on every production alert, investigates across your logs, metrics, traces, and recent deploys, and hands your team a root cause and a proposed fix — so 3am pages become morning summaries.
+
+## What Vigil is
+- An AI on-call / SRE engineer for software teams.
+- Takes first response on alerts, triages noise, does root-cause analysis, proposes fixes.
+- Read-only by default; a graduated "autonomy ladder" earns its way toward guarded remediation.
+- Connects to existing tools (Datadog, Grafana, PagerDuty, Opsgenie, Kubernetes, GitHub) — no rip-and-replace, no agents or sidecars.
+
+## Who it is for
+- B2B SaaS / cloud-native teams, roughly Series A–C, 15–150 engineers.
+- Teams with a rotating on-call but no dedicated SRE org, facing alert fatigue and on-call burnout.
+- Buyer: VP/Head of Engineering, or first platform/infra hire.
+
+## How it is different
+- Built for teams without an SRE army: fast setup, mid-market pricing (vs. enterprise-first Resolve.ai, Traversal, Cleric).
+- Trust ladder starting read-only (vs. all-at-once autonomy claims or human-in-the-loop-forever tools).
+- Optimizes for signal (pages that never wake a human) and burnout, not just MTTR.
+
+## Key facts
+- Your production data is never used to train models.
+- Least-privilege, read-only access by default, with full audit logging.
+- Currently onboarding founding design partners (early access).
+
+## Contact / next step
+- Book a demo from the site to see Vigil on your own incidents.
