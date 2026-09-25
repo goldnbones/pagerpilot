@@ -1,46 +1,43 @@
 # PagerPilot — go-live checklist
 
-The site is live at https://goldnbones.github.io/pagerpilot/. To put it on our own
-domain, get business email, and start taking demo calls, here's the path. Steps
-marked **[you]** need your accounts/payment; **[me]** I finish once you unblock them.
+Live now at https://goldnbones.github.io/pagerpilot/. To move onto our own domain,
+get business email, and take demo calls, here's the path. **[you]** needs your
+payment/accounts; **[me]** I finish the moment you unblock it.
 
-## 1. Domain **[you]** — everything else hangs off this
-Bare `vigil.com` and several `*vigil*` domains are taken by other companies (a
-naming/trademark flag — worth a rename decision). Available as of the last check:
-- **vigilhq.com**, vigilops.com, usevigil.com, onvigil.com, vigiloncall.com
+## 1. Domain — decided: **pagerpilot.com** **[you to buy, ~$10.44/yr]**
+Available and on-budget at **Cloudflare Registrar** (at-cost, no markup). Buy it,
+then send me the confirmation. I cannot complete the checkout myself (no payment
+method on file). Once you own it, I do the rest of this step:
 
-Buy one at **Cloudflare Registrar** (at-cost, ~$10/yr, best for DNS + free email
-routing) or Namecheap. Send me the domain and I'll do step 5.
+- I add a `CNAME` file containing `pagerpilot.com` and push.
+- You add these DNS records at Cloudflare (I'll paste them again when ready):
+  - **A** `@` → `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
+  - **CNAME** `www` → `goldnbones.github.io`
+- GitHub Pages then serves the site at https://pagerpilot.com over HTTPS.
 
-## 2. Business email **[you]**
-Recommended: **Google Workspace** (~$7/user/mo) — gives `you@yourdomain.com`
-plus Google Calendar (the booking tool in step 3) and Meet (the demo calls) in
-one place. Sign up, verify the domain (add the DNS records Google shows you).
+(Quick trademark sanity check recommended before you print business cards, but
+no obvious conflict turned up.)
 
-Free alternative: **Cloudflare Email Routing** (forward `you@yourdomain.com` to
-your Gmail for free) + Gmail "Send mail as" to reply from the domain. This gives
-a professional address but not the integrated calendar/Meet.
+## 2. Business email `you@pagerpilot.com` **[you]**
+Needs the domain first. Fastest: **Google Workspace** (~$7/user/mo) — email +
+Google Calendar (the booking tool below) + Meet (the calls) in one signup; verify
+the domain with the DNS records Google shows you. Free alternative: **Cloudflare
+Email Routing** forwards `you@pagerpilot.com` to your Gmail at no cost, plus Gmail
+"Send mail as" to reply from the domain.
 
-## 3. Booking page — how demo calls get booked **[you]**
+## 3. Booking page — how demo calls get booked **[you → me]**
 Google's API can't create a booking page, so make it once by hand:
-1. Google Calendar → **Create → Appointment schedule**. Name it "PagerPilot demo",
-   30-min slots, your availability, Google Meet as the location.
+1. Google Calendar → **Create → Appointment schedule** ("PagerPilot demo",
+   30-min slots, Google Meet as location).
 2. **Booking form → Add a question** (this is the pre-call survey):
-   - Company · Team size (1–15 / 15–50 / 50–150 / 150+ engineers)
-   - What do you use for observability + paging today?
-   - Biggest on-call pain? · Anything about a recent incident to walk through?
-3. Turn on email verification, save, copy the public link.
-4. Send me the link → **[me]** I paste it into `main.js` (`SITE.BOOKING_URL`).
+   Company · Team size · Observability + paging stack today · Biggest on-call
+   pain · Recent incident to walk through?
+3. Turn on email verification, save, copy the link → send to me → I paste it into
+   `main.js` (`SITE.BOOKING_URL`).
 
 ## 4. Lead capture for the on-page form **[you → me]**
-Create a free form at **formspree.io**, copy the endpoint (`https://formspree.io/f/xxxx`),
-send it to me → **[me]** I wire it into `main.js` (`SITE.FORM_ENDPOINT`).
-
-## 5. Point the domain at the site **[me, once you own it]**
-Send me the domain + either registrar access or a willingness to paste 4 DNS
-records I'll give you. I'll add a `CNAME` file, update every absolute URL
-(canonical, OG, sitemap, robots, llms.txt), and the site serves at your domain
-over HTTPS — which also strengthens SEO/AEO and email deliverability.
+Create a free form at **formspree.io**, copy the endpoint, send it → I wire it
+into `main.js` (`SITE.FORM_ENDPOINT`).
 
 ## Until then
 Nothing is broken: "Book a demo" scrolls to the on-page form, and the form falls
