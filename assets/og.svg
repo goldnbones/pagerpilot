@@ -13,7 +13,7 @@
   <rect width="1200" height="630" fill="url(#dawn)"/>
   <g transform="translate(84,84)">
     <circle cx="8" cy="9" r="8" fill="#ff9e64"/>
-    <text x="26" y="18" fill="#edecf6" font-family="Georgia,'Times New Roman',serif" font-size="30">Vigilante</text>
+    <text x="26" y="18" fill="#edecf6" font-family="Georgia,'Times New Roman',serif" font-size="30">PagerPilot</text>
   </g>
   <text x="84" y="270" fill="#edecf6" font-family="Georgia,'Times New Roman',serif" font-size="82">The on-call engineer</text>
   <text x="84" y="356" fill="#edecf6" font-family="Georgia,'Times New Roman',serif" font-size="82">that never sleeps.</text>

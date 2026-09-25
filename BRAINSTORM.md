@@ -1,10 +1,10 @@
-# Vigilante — strategy & brainstorm
+# PagerPilot — strategy & brainstorm
 
-**Working name:** Vigilante (an AI on-call engineer that "keeps watch so your team can sleep").
+**Working name:** PagerPilot (an AI on-call engineer that "keeps watch so your team can sleep").
 Name is a placeholder — swap it in one place (`SITE.name` in `main.js` + the `<title>`/schema). Verify domain + trademark before spending on either. Alternatives: **Klaxon**, **Warden**, **Nocturne**, **Relay**, or a persona name like **Paige** ("page" → Paige).
 
 ## One-liner (this is what SEO/AEO quotes)
-> Vigilante is an AI on-call engineer. It takes first response on every alert, investigates across your logs, metrics, and deploys, and hands your team a root cause and a proposed fix — so 3am pages become morning summaries.
+> PagerPilot is an AI on-call engineer. It takes first response on every alert, investigates across your logs, metrics, and deploys, and hands your team a root cause and a proposed fix — so 3am pages become morning summaries.
 
 ## The wedge (why this can win a crowded field)
 Live competitors all cluster in the same box: **enterprise + read-only investigation + "here's a suggested fix (PR)."** The map:
@@ -24,7 +24,7 @@ Live competitors all cluster in the same box: **enterprise + read-only investiga
 2. **The pain, not the metric.** Competitors sell "MTTR down 80%" (a buyer's spreadsheet metric). The felt pain is **the 3am page and on-call burnout** — which spreads bottom-up from engineers. Lead with sleep and signal, prove MTTR in the demo.
 3. **The trust ladder as the product.** Rivals are either "read-only forever" (incident.io) or "trust us, it's autonomous" (Resolve). Position a **graduated autonomy ladder**: starts read-only triage, earns trust, then remediates with guardrails. The ladder itself is the pitch — it's how a nervous mid-market buyer says yes.
 
-**Our sentence vs. theirs:** *"Built for teams without an SRE army. Vigilante takes first watch tonight — read-only — and earns its way to fixing things."*
+**Our sentence vs. theirs:** *"Built for teams without an SRE army. PagerPilot takes first watch tonight — read-only — and earns its way to fixing things."*
 
 ## ICP (who the landing page and survey target)
 - **Company:** B2B SaaS / cloud-native, Series A–C, **15–150 engineers**.

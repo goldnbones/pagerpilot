@@ -1,4 +1,4 @@
-# Vigilante — AI On-Call Engineer (landing / smoke test)
+# PagerPilot — AI On-Call Engineer (landing / smoke test)
 
 A validation landing page for an AI on-call/SRE product. Goal: measure demand
 (qualified demo bookings + founding-partner interest) before building the product.

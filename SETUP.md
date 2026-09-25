@@ -1,6 +1,6 @@
-# Vigilante — go-live checklist
+# PagerPilot — go-live checklist
 
-The site is live at https://goldnbones.github.io/vigilante/. To put it on our own
+The site is live at https://goldnbones.github.io/pagerpilot/. To put it on our own
 domain, get business email, and start taking demo calls, here's the path. Steps
 marked **[you]** need your accounts/payment; **[me]** I finish once you unblock them.
 
@@ -23,7 +23,7 @@ a professional address but not the integrated calendar/Meet.
 
 ## 3. Booking page — how demo calls get booked **[you]**
 Google's API can't create a booking page, so make it once by hand:
-1. Google Calendar → **Create → Appointment schedule**. Name it "Vigilante demo",
+1. Google Calendar → **Create → Appointment schedule**. Name it "PagerPilot demo",
    30-min slots, your availability, Google Meet as the location.
 2. **Booking form → Add a question** (this is the pre-call survey):
    - Company · Team size (1–15 / 15–50 / 50–150 / 150+ engineers)

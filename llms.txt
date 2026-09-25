@@ -1,8 +1,8 @@
-# Vigilante
+# PagerPilot
 
-> Vigilante is an AI on-call engineer. It takes first response on every production alert, investigates across your logs, metrics, traces, and recent deploys, and hands your team a root cause and a proposed fix — so 3am pages become morning summaries.
+> PagerPilot is an AI on-call engineer. It takes first response on every production alert, investigates across your logs, metrics, traces, and recent deploys, and hands your team a root cause and a proposed fix — so 3am pages become morning summaries.
 
-## What Vigilante is
+## What PagerPilot is
 - An AI on-call / SRE engineer for software teams.
 - Takes first response on alerts, triages noise, does root-cause analysis, proposes fixes.
 - Read-only by default; a graduated "autonomy ladder" earns its way toward guarded remediation.
@@ -24,4 +24,4 @@
 - Currently onboarding founding design partners (early access).
 
 ## Contact / next step
-- Book a demo from the site to see Vigilante on your own incidents.
+- Book a demo from the site to see PagerPilot on your own incidents.
