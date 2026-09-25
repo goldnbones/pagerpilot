@@ -1,32 +1,47 @@
-# Vigil — go-live setup (about 10 minutes)
+# Vigil — go-live checklist
 
-Two things need your accounts. Until you set them, the page still works:
-"Book a demo" scrolls to the lead form, and the form falls back to opening a
-prefilled email to you.
+The site is live at https://goldnbones.github.io/vigil/. To put it on our own
+domain, get business email, and start taking demo calls, here's the path. Steps
+marked **[you]** need your accounts/payment; **[me]** I finish once you unblock them.
 
-## 1) Google Calendar "Book a demo" link (the survey lives here)
-Google's API can't create a booking page, so create it once by hand:
+## 1. Domain **[you]** — everything else hangs off this
+Bare `vigil.com` and several `*vigil*` domains are taken by other companies (a
+naming/trademark flag — worth a rename decision). Available as of the last check:
+- **vigilhq.com**, vigilops.com, usevigil.com, onvigil.com, vigiloncall.com
 
-1. Open Google Calendar → **Create** → **Appointment schedule**.
-2. Name it "Vigil demo", set 30-minute slots and your availability.
-3. Under **Booking form → Add a question**, add these (this is the "survey beforehand"):
-   - Company (short answer)
-   - Team size (multiple choice: 1–15 / 15–50 / 50–150 / 150+ engineers)
-   - What do you use for observability + paging today? (short answer)
-   - Biggest on-call pain? (multiple choice: alert noise / slow root cause / 3am burnout / recurring incidents / no SRE team)
-   - Anything about a recent incident you want to walk through? (long answer)
-4. Turn on **email verification** (cuts spam), then **Save** and copy the public booking link.
-5. Paste it into `main.js` → `SITE.BOOKING_URL`. Commit + push.
+Buy one at **Cloudflare Registrar** (at-cost, ~$10/yr, best for DNS + free email
+routing) or Namecheap. Send me the domain and I'll do step 5.
 
-## 2) Lead form capture (Formspree, free)
-For people who fill the on-page form instead of booking:
+## 2. Business email **[you]**
+Recommended: **Google Workspace** (~$7/user/mo) — gives `you@yourdomain.com`
+plus Google Calendar (the booking tool in step 3) and Meet (the demo calls) in
+one place. Sign up, verify the domain (add the DNS records Google shows you).
 
-1. Sign up at formspree.io, create a form, copy the endpoint (looks like `https://formspree.io/f/abcwxyz`).
-2. Paste it into `main.js` → `SITE.FORM_ENDPOINT`. Commit + push.
-3. Add your email as the form's notification address in Formspree.
+Free alternative: **Cloudflare Email Routing** (forward `you@yourdomain.com` to
+your Gmail for free) + Gmail "Send mail as" to reply from the domain. This gives
+a professional address but not the integrated calendar/Meet.
 
-## 3) (Optional) custom domain
-GitHub Pages serves this at https://goldnbones.github.io/vigil/. For a real
-startup, buy a domain, add a `CNAME` file, and point DNS at GitHub Pages — then
-update the absolute URLs in `index.html` (canonical, og:url, og:image),
-`sitemap.xml`, `robots.txt`, and `llms.txt`.
+## 3. Booking page — how demo calls get booked **[you]**
+Google's API can't create a booking page, so make it once by hand:
+1. Google Calendar → **Create → Appointment schedule**. Name it "Vigil demo",
+   30-min slots, your availability, Google Meet as the location.
+2. **Booking form → Add a question** (this is the pre-call survey):
+   - Company · Team size (1–15 / 15–50 / 50–150 / 150+ engineers)
+   - What do you use for observability + paging today?
+   - Biggest on-call pain? · Anything about a recent incident to walk through?
+3. Turn on email verification, save, copy the public link.
+4. Send me the link → **[me]** I paste it into `main.js` (`SITE.BOOKING_URL`).
+
+## 4. Lead capture for the on-page form **[you → me]**
+Create a free form at **formspree.io**, copy the endpoint (`https://formspree.io/f/xxxx`),
+send it to me → **[me]** I wire it into `main.js` (`SITE.FORM_ENDPOINT`).
+
+## 5. Point the domain at the site **[me, once you own it]**
+Send me the domain + either registrar access or a willingness to paste 4 DNS
+records I'll give you. I'll add a `CNAME` file, update every absolute URL
+(canonical, OG, sitemap, robots, llms.txt), and the site serves at your domain
+over HTTPS — which also strengthens SEO/AEO and email deliverability.
+
+## Until then
+Nothing is broken: "Book a demo" scrolls to the on-page form, and the form falls
+back to emailing johnzhou1402@gmail.com so no lead is lost.
